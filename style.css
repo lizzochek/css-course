@@ -36,9 +36,10 @@ body {
   border-radius: 4px;
 }
 
-#plans ul {
+ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 .plan__title {
@@ -89,6 +90,39 @@ body {
 
 .button:focus {
   outline: none;
+}
+
+#key-features {
+  background: #ff1b68;
+  margin-top: 82px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
+#key-features ul li {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+#key-features ul li div {
+  background: #ffcede;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#key-features ul li p {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
 }
 
 .main-header {
