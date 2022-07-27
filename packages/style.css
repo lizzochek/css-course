@@ -1,0 +1,46 @@
+.plan {
+  border: 3px solid #0e4f1f;
+  background: #e1ffe9;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+.plan:hover,
+.plan:active {
+  border: 3px solid rgb(242, 98, 98);
+}
+
+.plan a {
+  text-decoration: none;
+  color: black;
+}
+
+.plan-description {
+  color: rgb(167, 161, 161);
+}
+
+.plan-text {
+  border: 1px solid #0e4f1f;
+  padding: 10px;
+  background: white;
+  color: #0e4f1f;
+}
+
+.plan-premium {
+  color: white;
+  background: #17632c;
+}
+
+.plan-premium .plan-title {
+  color: white;
+}
+
+.plan-free {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
