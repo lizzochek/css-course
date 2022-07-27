@@ -8,7 +8,7 @@ body {
 }
 
 #product-overview {
-  background: #ff1b68;
+  background: url('./forest.jpeg');
   width: 100%;
   height: 528px;
   padding: 10px;
@@ -17,11 +17,78 @@ body {
 
 .section-title {
   color: #2ddf5c;
+  text-align: center;
 }
 
 #product-overview h1 {
   color: white;
   font-family: 'Anton', sans-serif;
+}
+
+.plan {
+  background: #d5ffdc;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+#plans ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan__title {
+  color: #0e4f1f;
+}
+
+.plan__price {
+  color: rgb(125, 113, 113);
+}
+
+#plans ul li {
+  margin: 8px 0;
+}
+
+.recommended {
+  background: #19b84c;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.recommended .plan__price {
+  color: #0e4f1f;
+}
+.plan__header {
+  background: white;
+  color: #19b84c;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1px solid #0e4f1f;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .main-header {
