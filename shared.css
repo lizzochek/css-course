@@ -8,7 +8,18 @@ body {
 }
 
 main {
-  margin-top: 47px;
+  margin-top: 2.85rem;
+}
+
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .button {
@@ -16,8 +27,8 @@ main {
   color: white;
   font: inherit;
   border: 1px solid #0e4f1f;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -35,7 +46,7 @@ main {
 .main-header {
   background: #2ddf5c;
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -67,10 +78,10 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.375rem;
   display: inline-block;
-  height: 22px;
-  width: 22px;
+  height: 1.375rem;
+  width: 1.375rem;
 }
 
 .main-header__brand img {
@@ -79,7 +90,7 @@ main {
 }
 
 .main-nav__link {
-  padding: 0 5px;
+  padding: 0 0.31rem;
   color: #0e4f1f;
   text-decoration: none;
 }
@@ -94,8 +105,8 @@ main {
 .main-nav__item--cta a {
   color: white;
   background: #ff1b68;
-  padding: 8px 16px;
-  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .main-nav__item--cta a:hover,
@@ -107,14 +118,14 @@ main {
 
 .main-footer {
   background: black;
-  padding: 32px;
-  margin-top: 48px;
+  padding: 2rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
 .main-footer li {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-footer li a {
