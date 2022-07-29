@@ -1,7 +1,6 @@
 #product-overview {
   background: linear-gradient(to top, rgba(80, 68, 19, 0.6) 10%, transparent),
-    url('./images/istockphoto-1162786825-612x612.jpeg') left 5% top 10% / cover,
-    #ff1b68;
+    url('./images/istockphoto-1162786825-612x612.jpeg') center / cover, #ff1b68;
   width: 100vw;
   height: 60vh;
   padding: 0.625rem;
@@ -9,18 +8,14 @@
   position: relative;
 }
 
-.section-title {
-  color: #2ddf5c;
-  text-align: center;
-}
-
 #product-overview h1 {
   color: white;
   font-family: 'Anton', sans-serif;
+  font-size: 1.6rem;
 }
 
-.plan__list {
-  margin: auto;
+.section-title {
+  color: #2ddf5c;
   text-align: center;
 }
 
@@ -28,11 +23,9 @@
   background: #d5ffdc;
   text-align: center;
   padding: 1rem;
-  margin: 0.5rem;
+  margin: 1rem auto;
   font-size: 0.9rem;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+  width: 80%;
   border-radius: 0.25rem;
 }
 
@@ -57,7 +50,6 @@ section ul {
 .recommended {
   background: #19b84c;
   color: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .recommended .plan__price {
@@ -85,8 +77,8 @@ section ul {
 }
 
 #key-features ul li {
-  display: inline-block;
-  width: 30%;
+  width: 60%;
+  margin: auto;
   vertical-align: top;
 }
 
@@ -160,4 +152,53 @@ section ul {
 .modal__action--negative:active {
   background: #ff5454;
   border-color: #ff5454;
+}
+
+@media (max-width: 25rem) {
+  #product-overview {
+    height: 40vh;
+  }
+  #product-overview h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  #product-overview {
+    height: 70vh;
+  }
+  #product-overview h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .plan__list {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .plan {
+    width: 30%;
+    display: inline-block;
+    margin: 0.5rem;
+    vertical-align: middle;
+    min-width: 10rem;
+    max-width: 25rem;
+  }
+
+  .recommended {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 40rem) {
+  #key-features ul li {
+    width: 30%;
+    display: inline-block;
+    margin: 0.5rem;
+    min-width: 5rem;
+    max-width: 20rem;
+  }
 }
