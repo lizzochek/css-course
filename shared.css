@@ -8,7 +8,8 @@ body {
 }
 
 main {
-  margin-top: 2.85rem;
+  margin-top: 2.86rem;
+  min-height: calc(100vh - 3.5rem - 8rem);
 }
 
 .backdrop {
@@ -81,10 +82,7 @@ main {
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  vertical-align: middle;
-  width: calc(100% - 74px);
+  display: none;
 }
 
 .main-nav__item {
@@ -101,7 +99,6 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.375rem;
   display: inline-block;
   height: 1.375rem;
   width: 1.375rem;
@@ -190,9 +187,22 @@ main {
 }
 
 .mobile-nav__item a {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .open {
   display: block !important;
+}
+
+@media (min-width: 30rem) {
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: calc(100% - 74px);
+  }
 }

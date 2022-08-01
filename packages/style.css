@@ -64,3 +64,10 @@
 .clearfix {
   clear: both;
 }
+
+@media (min-width: 40rem) {
+  main {
+    margin: 3rem 0;
+    max-width: 1500px;
+  }
+}
